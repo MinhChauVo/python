@@ -7,36 +7,43 @@ class SinhVien:
 		self.HoTen = HoTen
 		self.MaKhoa = MaKhoa
 
+	def toString(self):
+		print(self.MSSV, self.HoTen, self.MaKhoa)
 	def getMSSV(self):
 		return self.MSSV
-	def setMSSV(self,MSSV):
-		self.MSSV = MSSV
 	def getHoTen(self):
 		return self.HoTen
-	def setHoTen(self,HoTen):
-		self.HoTen = HoTen
 	def getMaKhoa(self):
 		return self.MaKhoa
-	def setMaKhoa(self,MaKhoa):
-		self.MaKhoa = MaKhoa
-	def Xuat(self)
-		print (self.MSSV, self.HoTen, self.MaKhoa)
-class Khoa(object):
+class Khoa:
 	"""docstring for ClassName"""
 	def __init__(self, MaKhoa, TenKhoa):
 		super(Khoa, self).__init__()
 		self.MaKhoa = MaKhoa
 		self.TenKhoa = TenKhoa
-	def getMaKhoa(self)
+	def toString(self):
+		print(self.MaKhoa, self.TenKhoa)
+	def getMaKhoa(self):
 		return self.MaKhoa
-	def setMaKhoa(self,MaKhoa)
-		self.MaKhoa = MaKhoa
-	def getTenKhoa(self)
+	def getTenKhoa(self):
 		return self.TenKhoa
-	def setTenKhoa(self, TenKhoa)
-		self.TenKhoa = TenKhoa
-	def xuat(self)
-		print self.MaKhoa, self.TenKhoa
+a= []
+a.append(SinhVien(001, 'Mai A', 01))
+a.append(SinhVien(002, 'Mai B', 03))
+a.append(SinhVien(003, 'Mai C', 01))
+a.append(SinhVien(004, 'Mai D', 02))
+a.append(SinhVien(005, 'Mai E', 01))
+a.append(SinhVien(006, 'Mai F', 03))
 
+for i in xrange(0,a):
+	i.toString()
+k = []
+k. append(Khoa(56, 'Khoa 56 CNTT'))
+k.append(Khoa(57, 'Khoa 57 CNTT'))
+k.append(Khoa(58, 'Khoa 58 CNTT'))
+k. append(Khoa(59, 'Khoa 59 CNTT'))
 
+for i in xrange(0,a):
+	print(str(get.Khoa) == 57)
+	i.toString()
 		
